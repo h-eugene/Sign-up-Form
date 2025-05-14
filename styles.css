@@ -44,8 +44,141 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--system-font);
+  display: flex;
+  min-height: 100dvh;
+
+  /* Variables */
+  --system-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --main-color: #596D48;
+}
+
+.left-side {
+  width: 40%;
+  text-align: center;
+  background: center/cover url(./assets/green.jpg);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: calc(100dvh * 0.25);
+  color: white;
+  font-family: "norsebold", var(--system-font);
+  font-size: 6.2em;
+  display: flex;
+  justify-content: center;
+  padding: 0.1em;
+  align-items: center;
+}
+
+.left-side footer {
+  margin-top: auto;
+  color: white;
+  padding: 0.5em;
+}
+
+.left-side footer a {
+  color: white;
+}
+
+.right-side {
+  width: 60%;
+  background-color: rgb(248, 248, 248);
+}
+
+.info-container {
+  font-weight: 600;
+  font-size: 1.2em;
+  width: 700px;
+  height: 250px;
+  padding: 80px 120px 0 40px;
+}
+
+.info-container p:first-child {
+  margin: 0 0 20px;
+}
+
+.form-container {
+  background-color: white;
+  min-height: 270px;
+  padding: 10px 120px 20px 40px;
+  box-shadow: 0px 6px 10px -6px rgb(156, 156, 156);
+}
+
+.form-container > p {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px 60px;
+}
+
+form > p {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  letter-spacing: 0.09em;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+input {
+  border: 2px solid #e9e3e3;
+  border-radius: 3px;
+  padding: 2px 10px;
+}
+
+input:invalid {
+  border: 2px solid rgb(235, 96, 96);
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgb(88, 88, 222);
+  box-shadow: 2px 2px 6px -1px rgb(156, 156, 156);
+}
+
+.btn {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 8px 44px;
+  margin: 30px 0 0 40px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 7px -4px rgb(156, 156, 156);
+}
+
+.btn:hover {
+  background-color: color-mix(in srgb, var(--main-color), white 10%);
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: color-mix(in srgb, var(--main-color), black 15%);
 }
 
 
+.log-in {
+  margin: 20px 0 0 40px;
+  font-size: 1.1em;
+  font-weight: 400;
+}
 
+.log-in > a {
+  color: #596D48;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-decoration: none;
+}

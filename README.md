@@ -4,7 +4,7 @@ A simple sign-up form created as part of The Odin Project curriculum. This proje
 
 ## Preview
 
-![Sign-Up Form Preview](./images/preview.png)
+![Sign-Up Form Preview](./preview.png)
 
 ## Credits
 
