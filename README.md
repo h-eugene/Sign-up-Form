@@ -6,6 +6,7 @@ A simple sign-up form created as part of The Odin Project curriculum. This proje
 
 ![Sign-Up Form Preview](./preview.png)
 
+**Live Demo:** https://wrzdx.github.io/Sign-up-Form/
 ## Credits
 
 Background image by [Halie West](https://unsplash.com/@haliewestphoto) on [Unsplash](https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA).
